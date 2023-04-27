@@ -134,11 +134,6 @@ module.exports = {
         ],
     },
     plugins: [
-        ['@vuepress/back-to-top', 'code-copy'],
-        ['container', {
-            type: 'dir',
-            before: '<pre class="dir-container"><code>',
-            after: '</code></pre>'
-          }],
+        ['@vuepress/back-to-top', 'code-copy']
     ]
 };
