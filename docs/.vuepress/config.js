@@ -132,8 +132,5 @@ module.exports = {
             },
 
         ],
-    },
-    plugins: [
-        ['code-copy']
-    ]
+    }
 };
