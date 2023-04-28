@@ -18,7 +18,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build site 🏗
-        run: npm run docs:build --no-cache set NODE_OPTIONS=--openssl-legacy-provider
+        run: npm run docs:build --no-cache
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy 🚀
