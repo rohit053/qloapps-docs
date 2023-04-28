@@ -2,3 +2,4 @@ docs/.vuepress/dist
 node_modules/
 old-package-lock.json
 old-package.json
+old-deploy.sh
