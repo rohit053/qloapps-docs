@@ -15,13 +15,15 @@ jobs:
           persist-credentials: false
 
       - name: NPM install 📦
-        uses: actions/setup-node@v3
+
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16.15.1
-          cache: 'npm'
+          node-version: 16
+
+        uses: bahmutov/npm-install@HEAD
 
       - name: Build site 🏗
-        run: npm run docs:build --openssl-legacy-provider
+        run: npm run docs:build --no-cache --openssl-legacy-provider
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy 🚀
