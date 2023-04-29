@@ -21,6 +21,10 @@ jobs:
       - name: NPM install 📦
         uses: bahmutov/npm-install@v1
 
+      - run: |
+          node --version
+          npm --version
+
       - name: Build site 🏗
         run: npm run docs:build --no-cache
 
